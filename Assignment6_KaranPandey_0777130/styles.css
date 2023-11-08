@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333; /* Desktop color */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    background-color: #ddd; /* Desktop color */
+    padding: 20px;
+}
+
+form {
+    background-color: #fff; /* Background color for the form */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px; /* Increase font size for mobile devices */
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%; /* Occupy full screen width on mobile */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333; /* Button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media query for tablet and desktop */
+@media (min-width: 601px) {
+    body {
+        background-color: #666; /* Tablet and desktop color */
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    .form-group {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    label {
+        font-size: 18px;
+        margin-right: 20px;
+        text-align: right;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    body {
+        background-color: #999; /* Mobile color */
+    }
+
+    label {
+        font-size: 24px; /* Increase font size for mobile devices */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        font-size: 18px; /* Increase input box size for mobile devices */
+    }
+}
